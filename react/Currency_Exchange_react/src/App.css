@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  text-align: center;
+  background-color: rgb(67, 67, 67);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}

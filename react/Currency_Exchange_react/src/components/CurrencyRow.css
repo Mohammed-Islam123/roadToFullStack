@@ -1,0 +1,15 @@
+input,
+select {
+  height: 3rem;
+  border-radius: 0.3rem;
+
+  border: 1px solid black;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding: 5px;
+}
+select {
+  width: 6rem;
+  margin-left: 0.5rem;
+}
