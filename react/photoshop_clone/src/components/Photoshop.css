@@ -1,0 +1,94 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: #dadada;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "image sidebar "
+    "slider sidebar";
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
+}
+nav ul li {
+  height: 5rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+nav ul li::after {
+  content: "";
+  border-bottom: 0.2rem solid rgb(79, 4, 150);
+  width: 70%;
+
+  position: absolute;
+  bottom: 0;
+}
+.active {
+  background-color: rgb(162, 72, 247);
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: rgb(215, 175, 253);
+  border-left: 0.2rem solid rgb(162, 72, 247);
+}
+.image-container {
+  grid-area: image;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slider-container {
+  padding: 3rem;
+  grid-area: slider;
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.slider {
+  width: 100%;
+  max-width: 900px;
+}
+/*
+.container {
+  width: 100%;
+  height: 100%;
+  background: #dadada;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "image sidebar "
+    "slider sidebar";
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: aqua;
+}
+.image-container {
+  grid-area: image;
+  background-color: blueviolet;
+}
+
+.slider-container {
+  grid-area: slider;
+}
+
+
+
+*/

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { CurrencyRow } from "./CurrencyRow";
-const API_KEY = "Your API Key";
+const API_KEY = "YOUR_API_KEY";
 const BASE_URL = "https://api.freecurrencyapi.com/v1/";
 
 export default function CurrencyExchange() {
