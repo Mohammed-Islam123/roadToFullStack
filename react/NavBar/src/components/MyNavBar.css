@@ -1,0 +1,47 @@
+.links-wrapper {
+  width: 100%;
+  padding: 3rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-top: 0;
+}
+
+.links-wrapper a {
+  text-decoration: none;
+  color: white;
+}
+.links-wrapper h1 {
+  font-size: 3rem;
+}
+.sections {
+  display: flex;
+  font-size: 1.5rem;
+  width: 30%;
+  justify-content: space-around;
+}
+.sections a {
+  padding: 1.5rem;
+  list-style: none;
+  transition: background-color 100ms ease;
+  border-radius: 3rem;
+}
+
+.sections a:hover,
+.sections a:focus-visible {
+  background-color: rgb(160, 160, 160);
+}
+.content {
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  height: 200vh;
+}
+.active {
+  background-color: rgb(117, 117, 117);
+}
