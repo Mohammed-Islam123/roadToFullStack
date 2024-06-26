@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.letters {
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 5px;
+}
+.letters li {
+  list-style: none;
+  display: inline-block;
+}
+.letter {
+  font-weight: bold;
+  font-size: 1.7rem;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid black;
+  padding: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  aspect-ratio: 1/1;
+}
+.letter:hover {
+  background-color: rgb(111, 111, 255);
+}
+.selected-letter {
+  background-color: rgb(204, 204, 204);
+  color: rgb(0, 0, 0, 0.7);
+  cursor: none;
+  pointer-events: none;
+}
+.guessed-letters {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.guessed-letter {
+  font-size: 3rem;
+  width: 50px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid black;
+  padding: 10px;
+}
+.drawing-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.missing-letter {
+  color: red;
+}
+.result {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}

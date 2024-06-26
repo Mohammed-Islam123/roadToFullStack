@@ -1,0 +1,125 @@
+:root {
+  --main-color: #9b9b9b;
+  --main-border-width: 0.15rem;
+  --main-border-raidius: 0.5rem;
+}
+.selected-container {
+  width: 100%;
+  min-height: var(--main-border-raidius);
+  border-radius: 0.5rem;
+  border: var(--main-border-width) solid var(--main-color);
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  display: flex;
+  outline-color: none;
+  position: relative;
+}
+.selected-container:focus {
+  outline-color: rgb(100, 216, 255);
+}
+.selected-option {
+  cursor: pointer;
+  flex-grow: 1;
+  font-size: 1.7rem;
+  width: 100%;
+  align-self: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.clear-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  color: var(--main-color);
+  cursor: pointer;
+  font-weight: bold;
+}
+.clear-btn:focus-visible,
+.clear-btn:hover {
+  color: red;
+}
+.devider {
+  background-color: var(--main-color);
+  width: 0.1rem;
+  padding: 0;
+  margin: 0;
+  align-self: stretch;
+}
+.caret {
+  padding: 0;
+  margin: 0;
+  border: 0.5rem solid transparent;
+  border-top-color: var(--main-color);
+  cursor: pointer;
+
+  transform: translate(0, 0.25rem);
+}
+.caret:hover,
+.caret:focus {
+  border-top-color: #5e5e5e;
+}
+.options {
+  list-style: none;
+
+  width: 100%;
+  max-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: none;
+  margin-top: 5px;
+  font-size: 1.7rem;
+  left: 0;
+  z-index: 100;
+  top: calc(100% + 0.3rem);
+  border-radius: var(--main-border-raidius);
+  transition: max-height 200ms ease;
+}
+.options.show {
+  max-height: 15rem;
+  border: var(--main-border-width) solid var(--main-color);
+}
+.option {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  z-index: 100;
+}
+.option:hover,
+.option:focus-visible {
+  background-color: rgb(100, 216, 255);
+}
+.active-option {
+  color: white;
+  background-color: rgb(7, 176, 233);
+}
+
+.multi-selected-option {
+  display: flex;
+  outline: none;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1.4rem;
+  border: var(--main-border-width) solid var(--main-color);
+  border-radius: var(--main-border-raidius);
+  padding: 0.3rem 0.5rem;
+  background-color: transparent;
+}
+.multi-selected-option:hover,
+.multi-selected-option:focus-visible {
+  background-color: rgb(253, 139, 139);
+}
+.multi-selected-option:hover .remove-btn,
+.multi-selected-option:focus-visible .remove-btn {
+  color: red;
+}
+.multi-selected-options {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 0.5rem;
+}
